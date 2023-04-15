@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1, h3 {
+    display: grid;
+    text-align: center;
+    
+}
+
+h1 {
+    padding-top: 50px;
+}
+h3 {
+    padding-top: 25px;
+}
+
+.navbar, li {
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+}
