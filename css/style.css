@@ -142,15 +142,13 @@ ul {
 /* Media queries */
 
 @media (max-width: 800px) {
+    
     .parte-principal {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
-        row-gap: 30px;
-        max-width: 80%;
     }
 
     .perfiles p {
-        max-width: 80%;
+        max-width: 70%;
     }
 }

@@ -13,17 +13,17 @@ const mostrarDatos = (datos) =>{
     console.log(typeof(datos))
     console.log(datos)
 
-    const datos1 = datos.results
+    const info = datos.results
 
     let body = '';
 
-    for(let i = 0; i < datos1.length; i++ ){
+    for(let i = 0; i < info.length; i++ ){
         body += `<div class='perfiles'>        
-        <img src='${datos1[i].picture.large}'>
-        <p>Nombre: ${datos1[i].name.last}, ${datos1[i].name.first} </p>
-        <p>Edad: ${datos1[i].dob.age}</p>
-        <p>Mail: ${datos1[i].email}</p>  
-        <p>País: ${datos1[i].location.country}</p>   
+        <img src='${info[i].picture.large}'>
+        <p>Nombre: ${info[i].name.last}, ${info[i].name.first} </p>
+        <p>Edad: ${info[i].dob.age}</p>
+        <p>Mail: ${info[i].email}</p>  
+        <p>País: ${info[i].location.country}</p>   
         </div>`;
         
         document.getElementById('principal').innerHTML = body;
