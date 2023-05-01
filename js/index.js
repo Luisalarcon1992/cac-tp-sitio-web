@@ -1,5 +1,5 @@
 const url = 'https://jsonplaceholder.typicode.com/users'
-const url2 = 'https://randomuser.me/api/?results=8'
+const url2 = 'https://randomuser.me/api/?results=20'
 
 const apiKey = { headers: { 'ApiKey': '2XXV-712C-FKPU-H0QF'}};
 
@@ -18,7 +18,7 @@ const mostrarDatos = (datos) =>{
     let body = '';
 
     for(let i = 0; i < info.length; i++ ){
-        body += `<div class='perfiles'>        
+        body += `<div class=''>        
         <img src='${info[i].picture.large}'>
         <p>Nombre: ${info[i].name.last}, ${info[i].name.first} </p>
         <p>Edad: ${info[i].dob.age}</p>
