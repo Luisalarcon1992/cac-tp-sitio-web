@@ -15,9 +15,9 @@ const apiKey = { headers: { 'ApiKey': '2XXV-712C-FKPU-H0QF'}};
 
     let body = '';
     
-    // verificar mail del usuario desde la url y mostrar sus datos
+    
     const urlParams = new URLSearchParams(window.location.search);
-    const email = urlParams.get('id');
+    const email = urlParams.get('id');// verificar mail del usuario desde la url y mostrar sus datos
     console.log(email);
     for(let i = 0; i < info.length; i++ ){
         if (info[i].email == email) {
