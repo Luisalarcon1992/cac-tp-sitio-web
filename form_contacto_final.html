@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Work</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="src/i-work.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" >
+    function validar (){
+        var form = document.form;
+
+        if (form.nombre.value==0){
+            alert("el campo nombre esta vacio");
+            form.nombre.value=="";
+            form.nombre.focus();
+            false;
+            }
+        if (form.apellido.value==0){
+            alert("el campo apellido esta vacio");
+            form.nombre.value=="";
+            form.nombre.focus();
+            false;
+        }    
+        if (form.genero.value==0){
+            alert("elija un genero");
+            form.genero.value=="";
+            form.genero.focus();
+            false;
+        }
+        if(form.fecha.value==0){
+            alert("elija una fecha");
+            form.fecha.value="";
+            form.fecha.focus();
+            false;
+        }
+        if(form.movil.value==0){
+            alert("complete el numero de celular");
+            form.movil.value="";
+            form.movil.focus();
+            false;
+        }
+        if(form.email.value==0){
+            alert("complete el e-mail");
+            form.email.value="";
+            form.movil.focus();
+            false;
+        }
+        if(document.getElementsById("comentario").value.length==0){
+            alert("agregue un comentario");
+            form.comentario.value="";
+            form.comentario.focus();
+            false;
+        }
+
+    }
+</script>
+
+</head>
+<body>
+    <div class="container" id="general">
+        <nav class="main-nav">
+            <img src="src/i-work.ico" alt="" class="img-nav">
+            <ul class="menu-nav">
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="informacion" id="informacion">
+            <h1>I-Work</h1>
+            <h3>Encuentra la persona ideal para realizar el trabajo.</h3>
+        </div>
+        <!-- Parte principal -->
+        <header>
+            <div id="principal" class="parte-principal">     
+            </div>
+        </header>
+        <h3>Formulario de Contacto</h3>
+        <!-- <form action="mailto:jagtecnicopc@gmail.com" method="post" target="_blank"> -->
+            
+<body>
+            <!--<form action="form_contacto.html" method="post" target="_blank"></form>   -->
+        <form name = "form" action="#" method="POST" onsubmit="return validar();">
+        <fieldset>
+            <legend><h4>Datos para enviar</h4></legend>
+            
+            <label for="Nombre" >Nombre: </label>
+            <input type="text" size="30" name="nombre" id="nombre" placeholder ="ingrese su nombre aquí..."     required>
+            
+            <label for="Apellido">Apellido: </label>
+            <input type="text" size="30" name="apellido" id="apellido" placeholder ="ingrese su apellido aquí..." required>
+
+            <br><br>
+            <!-- <label for="sexo">Sexo</label> -->
+            <p class ="parrafo">Genero
+            <input type="radio" name="genero" value="hombre" >Hombre
+            <input type="radio" name="genero" value="mujer" >Mujer
+            <input type="radio" name="genero" value="otro" >Otro
+            </p>
+            <br>
+            <label for="Fechanac">Fecha de Nacimiento</label>
+            <input type="date"  name="fecha"  >
+            <br><br>
+            <label for="Movil">Movil: </label>
+            <input type="text" size="30" name="movil" id="movil" required>
+    
+           <br><br>
+           E-mail: <input type="email" name ="email" required>
+           <br><br>
+           Consulta: <textarea id = "comentario" name="comentario" rows="10" cols="40" required>Escribe tu consulta...</textarea>
+           
+           <br><br>
+           <!--<form method="POST">-->
+            <!--<div class="h-captcha" data-sitekey="8d065901-c218-46f2-807b-1a50515aa8ea"></div>-->
+            <!--<script src="https://js.hcaptcha.com/1/api.js" async defer></script>-->
+            <!--</form>-->
+           <!--<div class="g-recaptcha" data-sitekey="6LdM-pElAAAAAMG4aMz21GEx2MbQ7qMgvEFFVZIn"></div>-->
+           
+           <!--<input type="submit" value="Enviar datos">
+           <input type="reset" value="Borrar">-->
+
+           <button onclick="validar();">Enviar datos</button>
+        
+    </fieldset> 
+</form>
+       
+</body>
+        <section class="rrss">
+            <p class="seguinos">Síguenos en nuestras Redes Sociales</p>
+            <div class="links-rrss">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <p class="copyright">I-Work Copyright</p>
+        </section>
+    </div>
+
+    <!--<script src="js/index.js"></script>-->
+</body>
+</html>
