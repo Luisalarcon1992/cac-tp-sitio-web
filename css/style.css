@@ -224,3 +224,19 @@ ul {
 .volver a:hover {
     background-color: #ca7e70;
 }
+
+
+.moreInfo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.moreInfo a {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.moreInfo a:hover {
+    color: blue; 
+    text-decoration: underline;
+}

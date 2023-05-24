@@ -30,7 +30,9 @@ const apiKey = { headers: { 'ApiKey': '2XXV-712C-FKPU-H0QF'}};
             <p>Estado: ${info[i].location.state}</p>
             <p>Ciudad: ${info[i].location.city}</p>
             <p>Telefono: ${info[i].phone}</p>
-            <a href="index.html">Volver</a>   
+            <div class="moreInfo">
+            <a href="index.html">Volver</a> 
+           </div>
         </div>`;
 
 

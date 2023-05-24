@@ -29,7 +29,10 @@ const mostrarDatos = (datos) =>{
         <p>Edad: ${info[i].dob.age}</p>
         <p>Mail: ${info[i].email}</p>  
         <p>País: ${info[i].location.country}</p>
-        <a href="infoPersona.html?id=${info[i].email}">Más Información</a>   
+        <div class="moreInfo">
+        <a href="infoPersona.html?id=${info[i].email}">Más Información</a>
+        </div>
+                   
         </div>`;
         
         document.getElementById('principal').innerHTML = body;
